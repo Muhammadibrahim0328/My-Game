@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* Reset and Base Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px for easier scaling */
+}
+
+body {
+  font-family: 'Press Start 2P', sans-serif;
+  background-color: #222;
+  color: #eee;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+/* Header Section */
+header {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 4px solid #eee;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.between {
+  font-size: 1.2rem;
+  color: #bbb;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.number {
+  font-size: 5rem;
+  color: #333;
+  background-color: #eee;
+  width: 10rem;
+  height: 10rem;
+  line-height: 10rem;
+  margin: 1rem auto;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Button Styles */
+.btn {
+  border: none;
+  background-color: #60b347;
+  color: #fff;
+  font-size: 1.4rem;
+  font-family: inherit;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #45a033;
+  outline: none;
+}
+
+.again {
+  background-color: #ff6f47;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.again:hover {
+  background-color: #e65534;
+}
+
+/* Main Content */
+main {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+.left,
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Input Field */
+.guess {
+  background: none;
+  border: 3px solid #eee;
+  font-family: inherit;
+  color: #eee;
+  font-size: 2rem;
+  padding: 1rem;
+  width: 100%;
+  max-width: 250px;
+  text-align: center;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.guess:focus {
+  border-color: #60b347;
+  outline: none;
+}
+
+/* Message and Score */
+.message {
+  font-size: 1.6rem;
+  color: #ddd;
+  margin-bottom: 1rem;
+  min-height: 2rem;
+}
+
+.label-score,
+.label-highscore {
+  font-size: 1.4rem;
+  color: #bbb;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  main {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5rem;
+  }
+
+  .left,
+  .right {
+    align-items: flex-start;
+  }
+
+  .number {
+    font-size: 6rem;
+    width: 12rem;
+    height: 12rem;
+    line-height: 12rem;
+  }
+}
+
+/* Small Mobile Devices (300px and above) */
+@media (max-width: 480px) {
+  body {
+    padding: 0.5rem;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .number {
+    font-size: 3.6rem;
+    width: 7rem;
+    height: 7rem;
+    line-height: 7rem;
+  }
+
+  .guess {
+    font-size: 1.4rem;
+    padding: 0.6rem;
+    width: 90%;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 0.8rem 1rem;
+  }
+
+  .message {
+    font-size: 1rem;
+  }
+
+  .label-score,
+  .label-highscore {
+    font-size: 1rem;
+  }
+
+  .again,
+  .between {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+  }
+}
+
+/* Tablet and Above */
+@media (min-width: 768px) {
+  main {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5rem;
+  }
+
+  .left,
+  .right {
+    align-items: flex-start;
+  }
+
+  .number {
+    font-size: 6rem;
+    width: 12rem;
+    height: 12rem;
+    line-height: 12rem;
+  }
+}
